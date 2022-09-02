@@ -22,10 +22,8 @@ def main():
     print(alex.school_id)
     print(alex)
 
-    sam = Student('Sam', 45342, 2.3)
+    sam = Student('Sam', 'qwerty', 2.3)
     print(sam)
 
 if __name__ == '__main__':
     main()
-
-
