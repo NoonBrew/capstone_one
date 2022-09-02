@@ -4,7 +4,7 @@ from dataclasses import dataclass
 @dataclass
 class Student:
     # Dataclass does not require a call to self when initalizing the variables for the object
-    # Dataclass also requires the expected variables to be type cast. 
+    # Dataclass offers type hints when you create an object.
     name: str
     school_id: str
     gpa: float
@@ -15,6 +15,8 @@ class Student:
 
 def main():
 
+    # Dataclasses seem great when you want to just make something objects to hold data for access. 
+    # The set up seems more streamlined. 
     alex = Student('Alex', 'abcdefg', 3.2) 
 
     print(alex.name)

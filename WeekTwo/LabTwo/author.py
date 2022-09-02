@@ -1,3 +1,5 @@
+'''Lab 2 Part 1 and Part 2'''
+
 class Author:
     # Init function, set books default value to an empty list.
     def __init__(self, name):
@@ -7,31 +9,31 @@ class Author:
     # Function to append books to the list
     def publish(self, book):
         if book in self.books:
-            print('Error: {} is already in the list.'.format(book))
+            print(f'Error: {book} is already in the list.')
         else:
             self.books.append(book)
 
     def __str__(self):
         book_list = ', '.join(self.books) or 'No published books'
-        return 'the author, {}, has published the following books: {}'.format(self.name, book_list)
+        return f'the author, {self.name}, has published the following books: {book_list}.'
 
 def main():
 
-    authorOne = Author('J.R.R Tolkein')
+    author_one = Author('J.R.R Tolkein')
 
-    authorOne.publish('Fellowship of the Ring')
-    authorOne.publish('The Two Towers')
-    authorOne.publish('Return of the King')
+    author_one.publish('Fellowship of the Ring')
+    author_one.publish('The Two Towers')
+    author_one.publish('Return of the King')
 
-    print(authorOne)
+    print(author_one)
 
-    authorOne.publish('Fellowship of the Ring')
+    author_one.publish('Fellowship of the Ring')
 
-    print(authorOne)
+    print(author_one)
 
-    authorTwo = Author('Nate O')
+    author_two = Author('Nate O')
 
-    print(authorTwo)
+    print(author_two)
 
 
 main()

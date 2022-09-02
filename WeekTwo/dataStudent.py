@@ -22,8 +22,9 @@ def main():
     print(alex.school_id)
     print(alex)
 
-    sam = Student('Sam', 'qwerty', 2.3)
+    sam = Student('Sam', 1243123 , '2.3')
     print(sam)
+    print(type(sam.gpa))
 
 if __name__ == '__main__':
     main()
